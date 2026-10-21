@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Group J Design</title>
+  <meta name="description" content="Group J Design">
+
+  <style>
+    :root {
+      --black: #111111;
+      --gray: #a6a6a6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #ffffff;
+    }
+
+    body {
+      color: var(--black);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .identity {
+      margin-left: clamp(2rem, 7.8vw, 6rem);
+      transform: translateY(-1.25rem);
+    }
+
+    .logo {
+      display: block;
+      width: clamp(180px, 15vw, 240px);
+      height: auto;
+    }
+
+    .phone {
+      display: inline-block;
+      margin-top: 2.55rem;
+      color: var(--gray);
+      font-size: clamp(0.75rem, 1vw, 0.875rem);
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+    }
+
+    .phone:hover,
+    .phone:focus-visible {
+      color: var(--black);
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+
+    @media (max-width: 600px) {
+      .identity {
+        margin-left: 2rem;
+        transform: translateY(-0.75rem);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="identity" aria-label="Group J Design contact information">
+      <img
+        class="logo"
+        src="group-j-logo.svg"
+        alt="Group J Design"
+      >
+
+      <a
+        class="phone"
+        href="tel:+13022262031"
+        aria-label="Call Group J Design at 302 226 2031"
+      >
+        302.226.2031
+      </a>
+    </section>
+  </main>
+</body>
+</html>
